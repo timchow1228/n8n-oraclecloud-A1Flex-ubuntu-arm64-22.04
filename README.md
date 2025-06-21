@@ -1,6 +1,9 @@
-n8n完整一键安装脚本（适配 Cloudflare Tunnel + ARM + 权限修复）
+n8n完整一键安装脚本（适配 Cloudflare Tunnel + ARM）
 
 适配 ARM 架构 + Docker Compose + Cloudflare Tunnel
+
+在 Oraclecloud-VM.Standard.A1.Flex实例+全新安装Canonical-Ubuntu-22.04-Minimal-aarch64-2025.05.20-0镜像 条件下测试通过
+
 
 准备工作：
 
@@ -12,7 +15,8 @@ n8n完整一键安装脚本（适配 Cloudflare Tunnel + ARM + 权限修复）
 
 4.虽然 cloudflared 隧道不会直接暴露端口，但你本地的 n8n 仍监听在 5678 端口。确保服务器的防火墙允许本地回环和 Docker 容器端口转发。
 
-使用方法
+
+使用方法：
 
 1.下载或以上内容，保存为 install-n8n.sh
 
@@ -21,6 +25,8 @@ chmod +x install-n8n.sh
 ./install-n8n.sh
 
 3.搞定，访问n8n.xx.xxx即可
+
+
 
 
 
